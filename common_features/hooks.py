@@ -14,7 +14,7 @@ app_license = "MIT"
 
 # include js, css files in header of desk.html
 # app_include_css = "/assets/common_features/css/common_features.css"
-# app_include_js = "/assets/common_features/js/common_features.js"
+app_include_js = "/assets/common_features/js/item.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/common_features/css/common_features.css"
@@ -31,7 +31,10 @@ app_license = "MIT"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
-# doctype_js = {"doctype" : "public/js/doctype.js"}
+doctype_js = {
+	"Item" : "/common_features/utils/js/item.js",
+	"Item Attribute": "/common_features/utils/js/item_attribute.js"
+	}
 # doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
@@ -95,13 +98,11 @@ app_license = "MIT"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-#	"*": {
-#		"on_update": "method",
-#		"on_cancel": "method",
-#		"on_trash": "method"
-#	}
-# }
+doc_events = {
+	"Item Attribute": {
+		"validate": "common_features.common_features.utils.py.item_attribute.validate"
+	}
+}
 
 # Scheduled Tasks
 # ---------------
