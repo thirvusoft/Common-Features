@@ -60,7 +60,7 @@ doctype_js = {
 # ------------
 
 # before_install = "common_features.install.before_install"
-# after_install = "common_features.install.after_install"
+after_install = "common_features.install.after_install"
 
 # Uninstallation
 # ------------

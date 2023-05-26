@@ -1,7 +1,10 @@
 import frappe
+from common_features.common_features.utils.py.custom_fields import make_custom_fields
+
 
 def after_install():
     create_cw_attributes()
+    make_custom_fields()
 
 
 def create_cw_attributes():
