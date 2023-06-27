@@ -1,0 +1,8 @@
+{
+    "js/common_features.min.js": [
+        "public/js/website.js"
+    ],
+    "css/common_features.min.css": [
+        "public/css/website.css"
+    ]
+}
